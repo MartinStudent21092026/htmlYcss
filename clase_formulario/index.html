@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formularios</title>
+</head>
+
+<body>
+    <form action="/procesar.php" method="post">
+
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="15" placeholder="Tu nombre" 
+        readonly>
+        <input type="text" name="cp" pattern="[0-9]{5}" title = "5 digitos">
+        <label for="correo">email</label>
+        <input type="email" id="correo" name="correo">
+        <label for="edad">edad</label>
+        <input type="number" id="edad" name="edad" min="16" max="99">
+        <label type="mnensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" rows="4" cols="40" maxlength="10"></textarea>
+        <label for="curso">Curso</label>
+        <select name="curso" id="curso">
+            <option value="">--Elige una opcion--</option>
+            <option value="1daw">1ª DAW</option>
+            <option value="2daw">2ª Daw</option>
+        </select>
+        <fieldset>
+            <legend>Turno preferido</legend>
+            <input type="radio" id="mañana" name="turno" value="mañana">
+            <label for="mañana">Mañana</label>
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tare">Tarde</label>
+        </fieldset>
+
+
+        <input type="checkbox" name="lenguajes" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="lenguajes" value="css">
+        <label for="css">CSS</label>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar todo</button>
+
+    </form>
+</body>
+
+</html>
