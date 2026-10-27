@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.divPadre{
+   display: flex;
+   width: 1000;
+}
+.box {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  
+  background-color: #5e2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box1{
+  order: 3;
+
+}
+.box2{
+    order: 1;
+  flex-grow: 3;
+
+}
+.box3{
+  order:2;
+
+}
